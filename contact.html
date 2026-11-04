@@ -1,103 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Abhiruchi | Invertis University</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact the Campus Connect College Club team.">
+  <title>Contact | Campus Connect College Club</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<header>
-  <a class="logo" href="index.html">ABHIRUCHI<span>.</span></a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="clubs.html">Our Clubs</a>
-    <a href="registration.html">Join Us</a>
-    <a class="active" href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<section class="page-banner">
-  <p class="tag">WE ARE HERE TO HELP</p>
-  <h1>Contact Us</h1>
-  <p>Connect with the Abhiruchi student community.</p>
-</section>
-
-<main>
-<section class="section">
-  <div class="contact-layout">
-
-    <div class="contact-info">
-      <p class="tag">GET IN TOUCH</p>
-      <h2>Let's Connect!</h2>
-      <p>
-        Have questions about Abhiruchi or its seven clubs?
-        Visit the university's official website for university information.
-      </p>
-
-      <div class="contact-item">
-        <span>📍</span>
-        <div>
-          <h3>University Address</h3>
-          <p>Invertis University, Delhi Lucknow Highway NH-24,
-          Bareilly – 243123, Uttar Pradesh, India.</p>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <span>🌐</span>
-        <div>
-          <h3>Official Website</h3>
-          <a href="https://www.invertisuniversity.ac.in/"
-             target="_blank" rel="noopener">
-            www.invertisuniversity.ac.in
-          </a>
-        </div>
-      </div>
-
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="favicon.svg" alt="" width="32" height="32">
+        Campus Connect
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="registration.html">Join</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <div class="contact-form">
-      <h2>Send a Message</h2>
+  <main id="main">
+    <section class="hero" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h1 id="contact-title">Questions?<br><span class="accent">We’re happy to help.</span></h1>
+        <p class="lead">Send us a message about membership, events or ideas for the club. A team member will reply within two working days.</p>
+      </div>
+    </section>
 
-      <form action="#" method="post">
-        <label for="cname">Your Name *</label>
-        <input type="text" id="cname" name="name"
-          placeholder="Enter your name" required>
+    <section class="section section--tint" aria-labelledby="msg-title">
+      <div class="wrap split">
+        <div>
+          <h2 id="msg-title">Reach the team</h2>
+          <address>
+            <p><strong>Campus Connect College Club</strong><br>
+            Student Activity Room<br>
+            Invertis University, Bareilly, Uttar Pradesh</p>
+            <p>Email: <a href="mailto:campusconnect@example.com">campusconnect@example.com</a></p>
+          </address>
+          <h3>Meeting times</h3>
+          <ul class="check-list">
+            <li>Weekly meetup: Thursday, 4 pm</li>
+            <li>Workshops: see the <a href="about.html#events">event table</a></li>
+          </ul>
+        </div>
 
-        <label for="cemail">Email Address *</label>
-        <input type="email" id="cemail" name="email"
-          placeholder="Enter your email" required>
+        <form class="form-card" action="#" method="post" aria-labelledby="msg-title">
+          <div class="form-grid">
+            <div class="field">
+              <label for="c-name">Your name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="c-name" name="name" placeholder="e.g. Alex Morgan" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="c-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="c-email" name="email" placeholder="you@college.edu" autocomplete="email" required>
+            </div>
+            <div class="field field--full">
+              <label for="c-topic">Topic</label>
+              <select id="c-topic" name="topic">
+                <option>Membership</option>
+                <option>Events</option>
+                <option>Volunteering</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="c-msg">Message <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="c-msg" name="message" placeholder="How can we help?" required></textarea>
+            </div>
+            <div class="field field--full">
+              <button class="btn" type="submit">Send message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
 
-        <label for="subject">Subject *</label>
-        <input type="text" id="subject" name="subject"
-          placeholder="Enter subject" required>
-
-        <label for="message">Your Message *</label>
-        <textarea id="message" name="message" rows="5"
-          placeholder="Write your message" required></textarea>
-
-        <button type="submit" class="btn submit-btn">
-          Send Message
-        </button>
-      </form>
-      <p class="note">
-        Demo form: Message delivery is not configured.
-      </p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>Campus Connect College Club</strong><br>Invertis University, Bareilly</p>
+      <p>Built by Sandesh Pal, B.Tech CSE (1st year)<br>
+        <a href="contact.html">Get in touch</a> · <a href="registration.html">Join the club</a></p>
     </div>
-
-  </div>
-</section>
-</main>
-
-<footer>
-  <h3>ABHIRUCHI – THE HOBBY CLUB</h3>
-  <p>Created by Shourya Maheshwari | Invertis University</p>
-  <p>© 2026 All Rights Reserved</p>
-</footer>
-
+  </footer>
 </body>
 </html>

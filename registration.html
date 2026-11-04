@@ -1,122 +1,178 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join Abhiruchi | Invertis University</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign up as a member or apply to volunteer at Campus Connect College Club.">
+  <title>Join the Club | Campus Connect College Club</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<header>
-  <a class="logo" href="index.html">ABHIRUCHI<span>.</span></a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="clubs.html">Our Clubs</a>
-    <a class="active" href="registration.html">Join Us</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="favicon.svg" alt="" width="32" height="32">
+        Campus Connect
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="registration.html" aria-current="page">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<section class="page-banner">
-  <p class="tag">BECOME A MEMBER</p>
-  <h1>Join Abhiruchi</h1>
-  <p>Choose your passion and take the first step.</p>
-</section>
+  <main id="main">
+    <section class="hero" aria-labelledby="reg-title">
+      <div class="wrap">
+        <p class="eyebrow">Your next step</p>
+        <h1 id="reg-title">There’s a place<br><span class="accent">for you here.</span></h1>
+        <p class="lead">Sign up as a member, or tell us you’d like to help bring club events to life. We’ll be in touch with the next steps.</p>
+      </div>
+    </section>
 
-<main>
-<section class="section">
-  <div class="form-container">
-    <h2>Student Registration Form</h2>
-    <p class="muted">Please enter your details correctly.</p>
+    <section class="section section--tint" aria-labelledby="join-title">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Start with the basics</p>
+          <h2 id="join-title">Join the club</h2>
+          <p>Membership is open to all students. Fill out the short form and we’ll share meeting details and upcoming events.</p>
+          <div class="note">
+            <strong>What happens next?</strong>
+            <p>A club representative will contact you about the next meetup within a few days.</p>
+          </div>
+        </div>
 
-    <form action="#" method="post">
+        <form class="form-card" action="#" method="post" aria-labelledby="join-title">
+          <div class="form-grid">
+            <div class="field">
+              <label for="fullname">Full name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="fullname" name="fullname" placeholder="e.g. Alex Morgan" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">College email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@college.edu" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="password">Create a password <span class="req" aria-hidden="true">*</span></label>
+              <input type="password" id="password" name="password" placeholder="At least 8 characters" minlength="8" autocomplete="new-password" aria-describedby="pw-hint" required>
+              <span class="hint" id="pw-hint">Use 8 or more characters.</span>
+            </div>
+            <div class="field">
+              <label for="age">Age <span class="req" aria-hidden="true">*</span></label>
+              <input type="number" id="age" name="age" min="16" max="60" value="18" required>
+            </div>
+            <div class="field field--full">
+              <label for="course">Course or area of study</label>
+              <select id="course" name="course">
+                <option value="">Choose your course</option>
+                <option>B.Tech Computer Science</option>
+                <option>B.Tech (other branch)</option>
+                <option>BCA / MCA</option>
+                <option>Management</option>
+                <option>Pharmacy</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <fieldset>
+                <legend>Year of study</legend>
+                <div class="choice-row">
+                  <label class="choice"><input type="radio" name="year" value="1" checked> 1st</label>
+                  <label class="choice"><input type="radio" name="year" value="2"> 2nd</label>
+                  <label class="choice"><input type="radio" name="year" value="3"> 3rd</label>
+                  <label class="choice"><input type="radio" name="year" value="4"> 4th</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="field">
+              <label for="joindate">Preferred first meetup</label>
+              <input type="date" id="joindate" name="joindate" min="2026-11-01">
+            </div>
+            <div class="field field--full">
+              <fieldset>
+                <legend>Interests</legend>
+                <div class="choice-row">
+                  <label class="choice"><input type="checkbox" name="interests" value="coding"> Coding</label>
+                  <label class="choice"><input type="checkbox" name="interests" value="design"> Design</label>
+                  <label class="choice"><input type="checkbox" name="interests" value="speaking"> Public speaking</label>
+                  <label class="choice"><input type="checkbox" name="interests" value="sports"> Sports</label>
+                  <label class="choice"><input type="checkbox" name="interests" value="music"> Music</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="field field--full">
+              <label class="choice"><input type="checkbox" name="agree" required> I agree to follow the club’s code of conduct. <span class="req" aria-hidden="true">*</span></label>
+            </div>
+            <div class="field field--full">
+              <button class="btn" type="submit">Join the club</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
 
-      <label for="name">Full Name *</label>
-      <input type="text" id="name" name="name"
-        placeholder="Enter your full name" required>
+    <section class="section" id="volunteer" aria-labelledby="vol-title">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Want to do more?</p>
+          <h2 id="vol-title">Volunteer for events</h2>
+          <p>Our events run on student volunteers. Tell us when you’re free and what you’d like to help with.</p>
+        </div>
 
-      <label for="roll">University Roll Number *</label>
-      <input type="text" id="roll" name="roll"
-        placeholder="Enter your roll number" required>
+        <form class="form-card" action="#" method="post" aria-labelledby="vol-title">
+          <div class="form-grid">
+            <div class="field">
+              <label for="v-name">Full name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="v-name" name="v-name" placeholder="e.g. Alex Morgan" required>
+            </div>
+            <div class="field">
+              <label for="v-phone">Phone number</label>
+              <input type="tel" id="v-phone" name="v-phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" inputmode="numeric">
+            </div>
+            <div class="field field--full">
+              <label for="v-team">Team you’d like to join</label>
+              <select id="v-team" name="v-team">
+                <option value="">Choose a team</option>
+                <option>Event planning</option>
+                <option>Design and posters</option>
+                <option>Website and tech</option>
+                <option>Hospitality and welcome desk</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="v-hours">Hours you can give each week: <output id="hours-out" for="v-hours">3</output></label>
+              <input type="range" id="v-hours" name="v-hours" min="1" max="10" value="3"
+                     oninput="document.getElementById('hours-out').textContent = this.value">
+            </div>
+            <div class="field field--full">
+              <label for="v-why">Why would you like to help?</label>
+              <textarea id="v-why" name="v-why" placeholder="Share a few lines about yourself and your ideas."></textarea>
+            </div>
+            <div class="field field--full">
+              <button class="btn" type="submit">Send volunteer application</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
 
-      <label for="email">Email Address *</label>
-      <input type="email" id="email" name="email"
-        placeholder="Enter your email" required>
-
-      <label for="phone">Mobile Number *</label>
-      <input type="tel" id="phone" name="phone"
-        pattern="[0-9]{10}" placeholder="10 digit mobile number" required>
-
-      <label for="course">Course *</label>
-      <select id="course" name="course" required>
-        <option value="">Select your course</option>
-        <option>B.Tech</option>
-        <option>BCA</option>
-        <option>BBA</option>
-        <option>MBA</option>
-        <option>MCA</option>
-        <option>B.Com</option>
-        <option>BA</option>
-        <option>B.Sc</option>
-        <option>Other</option>
-      </select>
-
-      <label for="year">Academic Year *</label>
-      <select id="year" name="year" required>
-        <option value="">Select year</option>
-        <option>First Year</option>
-        <option>Second Year</option>
-        <option>Third Year</option>
-        <option>Fourth Year</option>
-        <option>Other</option>
-      </select>
-
-      <label for="club">Select Your Club *</label>
-      <select id="club" name="club" required>
-        <option value="">Choose your preferred club</option>
-        <option>Panache - The Arts Club</option>
-        <option>Rock On - The Cultural Club</option>
-        <option>I-Tech - The Technical Club</option>
-        <option>Images - The Publication Club</option>
-        <option>Stride - The Sports Club</option>
-        <option>M-Factor - The Management Club</option>
-        <option>The Responsible Invertian - The Social Club</option>
-      </select>
-
-      <label for="skills">Your Skills and Interests</label>
-      <textarea id="skills" name="skills" rows="4"
-        placeholder="Tell us about your hobbies and skills"></textarea>
-
-      <label for="reason">Why do you want to join Abhiruchi?</label>
-      <textarea id="reason" name="reason" rows="4"
-        placeholder="Write your reason here"></textarea>
-
-      <label class="checkbox">
-        <input type="checkbox" name="agreement" required>
-        I confirm that the information provided is correct.
-      </label>
-
-      <button type="submit" class="btn submit-btn">
-        Submit Registration
-      </button>
-
-    </form>
-    <p class="note">
-      Demo project: This form requires a backend or form service
-      to store actual registrations.
-    </p>
-  </div>
-</section>
-</main>
-
-<footer>
-  <h3>ABHIRUCHI – THE HOBBY CLUB</h3>
-  <p>Created by Shourya Maheshwari | Invertis University</p>
-  <p>© 2026 All Rights Reserved</p>
-</footer>
-
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>Campus Connect College Club</strong><br>Invertis University, Bareilly</p>
+      <p>Built by Sandesh Pal, B.Tech CSE (1st year)<br>
+        <a href="contact.html">Get in touch</a> · <a href="registration.html">Join the club</a></p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,134 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhiruchi | Invertis University</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Campus Connect is a student club at Invertis University where members meet, learn and run events together.">
+  <title>Campus Connect College Club | Home</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<header>
-  <a class="logo" href="index.html">ABHIRUCHI<span>.</span></a>
-  <nav>
-    <a class="active" href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="clubs.html">Our Clubs</a>
-    <a href="registration.html">Join Us</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="hero-content">
-      <p class="tag">INVERTIS UNIVERSITY • BAREILLY</p>
-      <h1>Discover Your Passion.<br>
-        <span>Explore Abhiruchi.</span>
-      </h1>
-      <p>
-        Abhiruchi – The Hobby Club is a platform where students
-        explore their interests, showcase their talents and develop
-        creativity, confidence and leadership beyond academics.
-      </p>
-      <a class="btn" href="clubs.html">Explore 7 Clubs</a>
-      <a class="btn btn-outline" href="registration.html">Join Abhiruchi</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="favicon.svg" alt="" width="32" height="32">
+        Campus Connect
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="registration.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="hero-symbol">A</div>
-  </section>
+  </header>
 
-  <section class="stats">
-    <div><h2>7</h2><p>Student Clubs</p></div>
-    <div><h2>2009</h2><p>Established</p></div>
-    <div><h2>1</h2><p>Student Community</p></div>
-  </section>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <p class="eyebrow">Your next step</p>
+        <h1 id="hero-title">There’s a place<br><span class="accent">for you here.</span></h1>
+        <p class="lead">Campus Connect is a student-run club for people who like to learn, build and meet others across every course. Sign up as a member, or tell us you’d like to help bring club events to life.</p>
+        <div class="btn-row">
+          <a class="btn" href="registration.html">Join the club</a>
+          <a class="btn btn--ghost" href="about.html">See our events</a>
+        </div>
+      </div>
+    </section>
 
-  <section class="section">
-    <div class="section-title">
-      <p class="tag">ABOUT THE COMMUNITY</p>
-      <h2>Welcome to Abhiruchi</h2>
-      <p>
-        A creative platform of Invertis University that encourages
-        students to discover their hidden talents and interests.
-      </p>
+    <section class="section section--tint" aria-labelledby="what-title">
+      <div class="wrap">
+        <h2 id="what-title">What we do together</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Learn by doing</h3>
+            <p>Weekly workshops on coding, design and public speaking, led by senior students.</p>
+          </article>
+          <article class="card">
+            <h3>Meet new people</h3>
+            <p>Open meetups and game nights make it easy to find friends outside your own class.</p>
+          </article>
+          <article class="card">
+            <h3>Run real events</h3>
+            <p>Volunteer on the team that plans hackathons, fests and campus clean-up days.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="next-title">
+      <div class="wrap split">
+        <div>
+          <h2 id="next-title">Coming up next</h2>
+          <p>Every event is free for members. Bring a friend if you like.</p>
+          <a class="btn btn--ghost" href="about.html#events">Full event table</a>
+        </div>
+        <ol class="event-list">
+          <li><time datetime="2026-11-12">12 Nov</time><span><strong>Intro to Web Dev workshop</strong><br>HTML and CSS basics, Lab 3</span></li>
+          <li><time datetime="2026-11-19">19 Nov</time><span><strong>Open mic and game night</strong><br>Seminar Hall, 5 pm</span></li>
+          <li><time datetime="2026-11-28">28 Nov</time><span><strong>24-hour Mini Hackathon</strong><br>Main auditorium</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--tint" aria-labelledby="cta-title">
+      <div class="wrap">
+        <h2 id="cta-title">Ready to start?</h2>
+        <p>Membership is open to all students. It takes about two minutes to sign up.</p>
+        <div class="btn-row">
+          <a class="btn" href="registration.html">Become a member</a>
+          <a class="btn btn--ghost" href="registration.html#volunteer">Volunteer for events</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>Campus Connect College Club</strong><br>Invertis University, Bareilly</p>
+      <p>Built by Sandesh Pal, B.Tech CSE (1st year)<br>
+        <a href="contact.html">Get in touch</a> · <a href="registration.html">Join the club</a></p>
     </div>
-
-    <div class="feature-grid">
-      <article class="feature">
-        <div class="emoji">🎨</div>
-        <h3>Creativity</h3>
-        <p>Express your ideas and explore your artistic interests.</p>
-      </article>
-      <article class="feature">
-        <div class="emoji">🚀</div>
-        <h3>Innovation</h3>
-        <p>Learn new skills and develop innovative thinking.</p>
-      </article>
-      <article class="feature">
-        <div class="emoji">🤝</div>
-        <h3>Leadership</h3>
-        <p>Build teamwork, confidence and leadership skills.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section clubs-preview">
-    <div class="section-title">
-      <p class="tag">FIND YOUR INTEREST</p>
-      <h2>Our Seven Clubs</h2>
-      <p>One community, seven different ways to express yourself.</p>
-    </div>
-
-    <div class="club-grid">
-      <article class="club-card">
-        <span>🎨</span><h3>Panache</h3>
-        <p>The Arts Club</p>
-      </article>
-      <article class="club-card">
-        <span>🎤</span><h3>Rock On</h3>
-        <p>The Cultural Club</p>
-      </article>
-      <article class="club-card">
-        <span>💻</span><h3>I-Tech</h3>
-        <p>The Technical Club</p>
-      </article>
-      <article class="club-card">
-        <span>📸</span><h3>Images</h3>
-        <p>The Publication Club</p>
-      </article>
-      <article class="club-card">
-        <span>🏆</span><h3>Stride</h3>
-        <p>The Sports Club</p>
-      </article>
-      <article class="club-card">
-        <span>📊</span><h3>M-Factor</h3>
-        <p>The Management Club</p>
-      </article>
-      <article class="club-card">
-        <span>🌱</span><h3>The Responsible Invertian</h3>
-        <p>The Social Club</p>
-      </article>
-    </div>
-
-    <div class="center">
-      <a href="clubs.html" class="btn">Discover All Clubs</a>
-    </div>
-  </section>
-
-  <section class="cta">
-    <h2>Your Passion Deserves a Platform!</h2>
-    <p>Become a part of the Abhiruchi student community.</p>
-    <a href="registration.html" class="btn">Register Now</a>
-  </section>
-</main>
-
-<footer>
-  <h3>ABHIRUCHI – THE HOBBY CLUB</h3>
-  <p>Invertis University, Bareilly, Uttar Pradesh</p>
-  <p>Website created by <strong>Shourya Maheshwari</strong></p>
-  <p>© 2026 Abhiruchi. Student Project.</p>
-</footer>
-
+  </footer>
 </body>
 </html>
